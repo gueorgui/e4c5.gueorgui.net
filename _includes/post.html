@@ -1,0 +1,10 @@
+<article>
+  <header>
+    <h2>{{ page.title }}</h2>
+  </header>
+  {% if page.lichess %}
+    <iframe src="https://lichess.org/embed/{{ page.lichess }}/black?theme=auto&bg=auto"
+            width=600 height=397 frameborder=0></iframe>
+  {% endif %}
+  {{ content }}
+</article>
